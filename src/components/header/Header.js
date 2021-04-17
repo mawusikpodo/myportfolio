@@ -38,8 +38,8 @@ const useStyles = makeStyles({
 });
 
 const navLinks = [
-  { title: `Resume`, path: `/resume` },
-  { title: `Projects`, path: `/projects` },
+  { title: "Resume", path: "/resume" },
+  { title: "Projects", path: "/projects" },
 ];
 
 const Header = () => {

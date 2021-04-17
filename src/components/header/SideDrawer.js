@@ -9,6 +9,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Menu } from "@material-ui/icons";
 import * as React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   list: {
@@ -45,11 +46,11 @@ const SideDrawer = ({ navLinks }) => {
     >
       <List component="nav">
         {navLinks.map(({ title, path }) => (
-          <a href={path} key={title} className={classes.linkText}>
+          <Link to={path} key={title} className={classes.linkText}>
             <ListItem button>
               <ListItemText primary={title} />
             </ListItem>
-          </a>
+          </Link>
         ))}
       </List>
     </div>
@@ -68,7 +69,7 @@ const SideDrawer = ({ navLinks }) => {
       <Drawer
         anchor="right"
         open={state.right}
-        onOpen={toggleDrawer("right", true)}
+        // onOpen={toggleDrawer("right", true)}
         onClose={toggleDrawer("right", false)}
       >
         {sideDrawerList("right")}
