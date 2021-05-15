@@ -38,7 +38,7 @@ const useStyles = makeStyles({
 });
 
 const navLinks = [
-  { title: "GitHub", path: "https://github.com/mawusikpodo" },
+  { title: "GitHub", path: `https://github.com/mawusikpodo` },
   { title: "Projects", path: "/projects" },
 ];
 
