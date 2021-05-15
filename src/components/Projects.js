@@ -51,8 +51,9 @@ const projects = [
   {
     id: "4",
     title: "Expence tracker",
-    description: "Built with react and material ui",
-    url: "",
+    description:
+      " a full stact application built with react, context api, express, mongodb and material ui",
+    url: "https://transactionsapp123.herokuapp.com",
     code: "https://github.com/mawusikpodo/Income-expence-tracker",
   },
 ];
