@@ -19,7 +19,8 @@ import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
-    backgroundColor: "#8e6e71",
+    backgroundColor: "#fafafa",
+    borderBottom: "1px solid #bfbfbf",
   },
 
   navbarDisplayFlex: {
@@ -32,14 +33,18 @@ const useStyles = makeStyles({
   },
   linkText: {
     textDecoration: "none",
-    // textTransform: `uppercase`,
-    color: `#fff`,
+    textTransform: `uppercase`,
+    color: `#1c1818`,
   },
 });
 
 const navLinks = [
   // { title: "GitHub", path: `https://github.com/mawusikpodo` },
+  // { title: "Projects", path: "/projects" },
+  { title: "Home", path: "/" },
+  { title: "About", path: "/about" },
   { title: "Projects", path: "/projects" },
+  { title: "Contact", path: "/contacts" },
 ];
 
 const Header = () => {
@@ -47,12 +52,19 @@ const Header = () => {
 
   return (
     <>
-      <AppBar position="fixed" className={classes.root}>
+      <AppBar position="fixed" className={classes.root} elevation={0}>
         <Toolbar component="nav">
           <Container className={classes.navbarDisplayFlex}>
             <IconButton edge="start" aria-label="home">
-              <Link to="/" style={{ color: `white`, textDecoration: `none` }}>
-                <Typography> MawusiKpodo </Typography>
+              <Link
+                to="/"
+                style={{
+                  color: `#7510F7`,
+                  textDecoration: `none`,
+                  textTransform: `uppercase`,
+                }}
+              >
+                <Typography color="initial"> RMK </Typography>
               </Link>
             </IconButton>
 

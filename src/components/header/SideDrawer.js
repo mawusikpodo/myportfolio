@@ -14,11 +14,15 @@ import { Link } from "react-router-dom";
 const useStyles = makeStyles({
   list: {
     width: 250,
+    height: "100%",
+    backgroundColor: "#fafafa",
+    padding: "50px",
   },
   linkText: {
     textDecoration: `none`,
-    // textTransform: `uppercase`,
+    textTransform: `uppercase`,
     color: `black`,
+    margin: "40px",
   },
 });
 
@@ -63,7 +67,7 @@ const SideDrawer = ({ navLinks }) => {
         aria-label="menu"
         onClick={toggleDrawer("right", true)}
       >
-        <Menu fontSize="large" style={{ color: `white` }} />
+        <Menu fontSize="large" style={{ color: `#194151` }} />
       </IconButton>
 
       <Drawer

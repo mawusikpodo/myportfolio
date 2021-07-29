@@ -1,12 +1,12 @@
-import { AppBar, Container, Toolbar, Typography } from "@material-ui/core";
+import { Container, Toolbar, Typography } from "@material-ui/core";
 import React from "react";
 
 export const Footer = () => {
   return (
-    <AppBar
+    <footer
       position="static"
       style={{
-        backgroundColor: "#8e6e71",
+        backgroundColor: "#fafafa",
         height: "100%",
       }}
     >
@@ -16,10 +16,10 @@ export const Footer = () => {
       >
         <Toolbar>
           <Typography variant="body1" color="inherit">
-            &copy; 2021 Mawusikpodo
+            &copy; 2021 mawusikpodo
           </Typography>
         </Toolbar>
       </Container>
-    </AppBar>
+    </footer>
   );
 };
